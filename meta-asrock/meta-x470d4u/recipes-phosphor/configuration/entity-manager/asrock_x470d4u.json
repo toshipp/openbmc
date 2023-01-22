@@ -1,0 +1,156 @@
+{
+    "Exposes": [
+        {
+            "Index": 0,
+            "Name": "3VSB",
+            "ScaleFactor": 0.3979,
+            "Type": "ADC"
+        },
+        {
+            "Index": 1,
+            "Name": "5VSB",
+            "ScaleFactor":  0.2683,
+            "Type": "ADC"
+        },
+        {
+            "Index": 2,
+            "Name": "VCPU",
+            "ScaleFactor":  0.1,
+            "Type": "ADC",
+            "PowerState": "On"
+        },
+        {
+            "Index": 3,
+            "Name": "VSOC",
+            "ScaleFactor":  0.6964,
+            "Type": "ADC",
+            "PowerState": "On"
+        },
+        {
+            "Index": 4,
+            "Name": "VCCM",
+            "Type": "ADC",
+            "PowerState": "On"
+        },
+        {
+            "Index": 5,
+            "Name": "APU_VDDP",
+            "Type": "ADC",
+            "PowerState": "On"
+        },
+        {
+            "Index": 6,
+            "Name": "1.05V_PROM_S5",
+            "Type": "ADC"
+        },
+        {
+            "Index": 7,
+            "Name": "2.5V_PROM",
+            "ScaleFactor": 0.5349,
+            "Type": "ADC",
+            "PowerState": "On"
+        },
+        {
+            "Index": 8,
+            "Name": "1.05V_PROM_RUN",
+            "Type": "ADC",
+            "PowerState": "On"
+        },
+        {
+            "BridgeGpio": [
+                {
+                    "Name": "HWM_BAT_EN",
+                    "Polarity": "High",
+                    "SetupTime": 0.5
+                }
+            ],
+            "Index": 9,
+            "Name": "BAT",
+            "ScaleFactor": 0.3333,
+            "Type": "ADC"
+        },
+        {
+            "Index": 10,
+            "Name": "3V",
+            "ScaleFactor": 0.3979,
+            "Type": "ADC",
+            "PowerState": "On"
+        },
+        {
+            "Index": 11,
+            "Name": "5V",
+            "ScaleFactor": 0.3333,
+            "Type": "ADC",
+            "PowerState": "On"
+        },
+        {
+            "Index": 12,
+            "Name": "12V",
+            "ScaleFactor": 0.0833,
+            "Type": "ADC",
+            "PowerState": "On"
+        },
+        {
+            "Index": 0,
+            "Name": "FAN1",
+            "Type": "AspeedFan"
+        },
+        {
+            "Index": 1,
+            "Name": "FAN2",
+            "Type": "AspeedFan"
+        },
+        {
+            "Index": 2,
+            "Name": "FAN3",
+            "Type": "AspeedFan"
+        },
+        {
+            "Index": 3,
+            "Name": "FAN4",
+            "Type": "AspeedFan"
+        },
+        {
+            "Index": 4,
+            "Name": "FAN5",
+            "Type": "AspeedFan"
+        },
+        {
+            "Index": 5,
+            "Name": "FAN6",
+            "Type": "AspeedFan"
+        },
+        {
+            "Name": "BMC",
+            "Type": "BMC"
+        },
+        {
+            "Address": "0x2d",
+            "Bus": 1,
+            "Name": "SYSTIN",
+            "Name1": "CPUTIN",
+            "Name10": "TSI0_TEMP",
+            "Name2": "AUXTIN0",
+            "Name3": "AUXTIN1",
+            "Name4": "AUXTIN2",
+            "Name5": "AUXTIN3",
+            "Name6": "PCH_CHIP_CPU_MAX_TEMP",
+            "Name7": "PCH_CHIP_TEMP",
+            "Name8": "PCH_CPU_TEMP",
+            "Name9": "PCH_MCH_TEMP",
+            "PowerState": "BiosPost",
+            "Type": "NCT6779"
+        }
+    ],
+    "Name": "ASRock X470D4U",
+    "Probe": [
+        "xyz.openbmc_project.FruDevice({'BOARD_PRODUCT_NAME': 'X470D4U'})"
+    ],
+    "Type": "Board",
+    "xyz.openbmc_project.Inventory.Decorator.Asset": {
+        "Manufacturer": "$BOARD_MANUFACTURER",
+        "Model": "$BOARD_PRODUCT_NAME",
+        "PartNumber": "",
+        "SerialNumber": "$BOARD_SERIAL_NUMBER"
+    }
+}
